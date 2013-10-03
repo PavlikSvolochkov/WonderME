@@ -7,15 +7,16 @@
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/fon_yellow">
 
     <TextView
       android:id="@+id/label"
-      style="@style/ActivityFont"
-      android:text="@string/all_facts"
-      android:layout_alignParentLeft="true" />
+      style="@style/activity_header"
+      android:text="@string/all_facts"/>
 
     <ImageButton
       android:id="@+id/reloadBtn"
@@ -23,7 +24,6 @@
       android:background="@drawable/reload_arrow_new"
       android:layout_alignParentRight="true"
       android:layout_centerVertical="true"
-      android:layout_marginRight="8dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:contentDescription="@string/desc" />

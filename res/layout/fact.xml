@@ -8,6 +8,8 @@
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/header"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
     android:orientation="horizontal"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
@@ -15,15 +17,8 @@
 
     <TextView
       android:id="@+id/label"
-      android:text="Удивительный факт"
-      android:textStyle="bold"
-      android:textSize="20sp"
-      android:textColor="@android:color/black"
-      android:layout_marginLeft="8dp"
-      android:layout_centerVertical="true"
-      android:layout_alignParentLeft="true"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      style="@style/activity_header"
+      android:text="Удивительный факт"/>
 
     <ImageButton
       android:id="@+id/backBtn"
@@ -42,7 +37,6 @@
       android:background="@drawable/reload_arrow_new"
       android:layout_alignParentRight="true"
       android:layout_centerVertical="true"
-      android:layout_marginRight="8dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:contentDescription="@string/desc" />
@@ -51,11 +45,8 @@
   <TextView
     android:id="@+id/fullFact"
     android:text="@string/trash"
-    android:textSize="16sp"
     android:padding="8dp"
-    android:textColor="@android:color/black"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content" />
+    style="@style/fact_text"/>
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@android:color/white"
@@ -66,29 +57,20 @@
     <TextView
       android:id="@+id/date"
       android:text="05.06.2012"
-      android:textColor="@color/about_text_color"
-      android:textSize="12sp"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      style="@style/simple_text"/>
 
     <TextView
       android:id="@+id/catTitle"
       android:text="Категория: "
-      android:textColor="@color/about_text_color"
-      android:textSize="12sp"
-      android:layout_below="@id/date"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      style="@style/simple_text"
+      android:layout_below="@id/date" />
 
     <TextView
       android:id="@+id/catName"
       android:text="Из жизни"
-      android:textColor="@color/about_text_color"
-      android:textSize="12sp"
+      style="@style/simple_text"
       android:layout_below="@id/date"
-      android:layout_toRightOf="@id/catTitle"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      android:layout_toRightOf="@id/catTitle" />
 
     <TextView
       android:id="@+id/menWonder"
@@ -97,6 +79,7 @@
       android:textStyle="bold"
       android:textColor="@android:color/black"
       android:paddingLeft="5dp"
+      android:layout_alignBaseline="@id/date"
       android:layout_alignParentRight="true"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
@@ -104,9 +87,10 @@
     <TextView
       android:id="@+id/wonders"
       android:text="7"
-      android:textSize="24sp"
+      android:textSize="30sp"
       android:textStyle="bold"
       android:textColor="@android:color/black"
+      android:layout_alignBaseline="@id/catName"
       android:layout_toLeftOf="@id/menWonder"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
@@ -135,37 +119,31 @@
 
       <RatingBar
         android:id="@+id/rating"
-        style="@style/foodRatingBar"
+        style="@style/RatingBar"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
       <TextView
         android:id="@+id/name"
         android:text="Лермонтов Алексей"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@android:color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
       <TextView
         android:id="@+id/title"
         android:text="Титул: замечательный удивляльщик"
-        android:textColor="@color/about_text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        style="@style/simple_text"/>
 
       <TextView
         android:id="@+id/addFacts"
         android:text="Добавлено фактов: 1"
-        android:textColor="@color/about_text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        style="@style/simple_text"/>
 
       <TextView
         android:id="@+id/sum"
         android:text="Сумма рейтингов: 452"
-        android:textColor="@color/about_text_color"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        style="@style/simple_text"/>
 
     </LinearLayout>
   </RelativeLayout>

@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-  android:paddingLeft="6dp"
-  android:paddingRight="6dp"
-  android:paddingTop="6dp"
-  android:paddingBottom="6dp"
+  android:padding="8dp"
   android:background="@android:color/white"
   android:layout_width="wrap_content"
   android:layout_height="wrap_content">
@@ -12,31 +9,21 @@
   <TextView
     android:id="@+id/factText"
     android:lines="4"
-    android:text=""
-    android:textColor="@android:color/black"
-    android:layout_toLeftOf="@+id/factArrow"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:text="@string/trash"
+    style="@style/fact_text"
+    android:layout_toLeftOf="@+id/factArrow" />
 
   <ImageView
     android:id="@+id/factArrow"
-    android:src="@android:drawable/arrow_down_float"
-    android:rotation="270"
-    android:layout_alignParentRight="true"
-    android:layout_centerVertical="true"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    style="@style/arrow_style"
     android:contentDescription="@string/desc" />
 
   <TextView
     android:id="@+id/factName"
     android:paddingRight="10dp"
-    android:text=""
-    android:textColor="@color/about_text_color"
-    android:gravity="left"
-    android:layout_below="@id/factText"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:text="Name"
+    style="@style/simple_text"
+    android:layout_below="@id/factText" />
 
   <ImageView
     android:id="@+id/factStar"
@@ -49,11 +36,9 @@
 
   <TextView
     android:id="@+id/factCount"
-    android:text=""
-    android:textColor="@color/about_text_color"
+    android:text="count"
+    style="@style/simple_text"
     android:layout_below="@id/factText"
-    android:layout_toRightOf="@id/factStar"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:layout_toRightOf="@id/factStar" />
 
 </RelativeLayout>

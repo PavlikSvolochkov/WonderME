@@ -27,10 +27,10 @@ public class CategoryAdapter extends ArrayAdapter<String> {
   public View getView(int position, View convertView, ViewGroup parent) {
     LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-    View rowView = inflater.inflate(R.layout.categories_list_item, parent, false);
+    View rowView = inflater.inflate(R.layout.category_row, parent, false);
 
-    catTextView = (TextView) rowView.findViewById(R.id.catTitle);
-    counterTextView = (TextView) rowView.findViewById(R.id.catCounter);
+    catTextView = (TextView) rowView.findViewById(R.id.category);
+    counterTextView = (TextView) rowView.findViewById(R.id.counter);
 
     catTextView.setText(catValues[position]);
     counterTextView.setText(countValues[position]);

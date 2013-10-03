@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:padding="8dp"
+  android:background="@android:color/white"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content">
+
+  <TextView
+    android:id="@+id/category"
+    android:text="Category"
+    style="@style/activity_header"/>
+
+  <TextView
+    android:id="@+id/counter"
+    android:text="Count"
+    android:layout_toRightOf="@+id/category"
+    android:layout_alignBaseline="@id/category"
+    android:paddingLeft="15dp"
+    style="@style/simple_text"/>
+
+  <TextView
+    android:id="@+id/facts"
+    android:text=" фактов"
+    android:layout_toRightOf="@+id/counter"
+    android:layout_alignBaseline="@id/counter"
+    style="@style/simple_text" />
+
+  <ImageView
+    android:id="@+id/arrow"
+    style="@style/arrow_style"
+    android:contentDescription="@string/desc" />
+</RelativeLayout>

@@ -21,15 +21,10 @@
   <TextView
     android:id="@+id/catCounter"
     android:text="@string/category"
-    android:textSize="16sp"
-    android:textColor="@android:color/darker_gray"
-    android:paddingLeft="15dp"
-    android:paddingRight="5dp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    style="@style/activity_header"/>
 
   <TextView
-    android:text="фактов"
+    android:text=" фактов"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content" />
 
