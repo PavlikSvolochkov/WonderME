@@ -60,26 +60,13 @@
       style="@style/simple_text"/>
 
     <TextView
-      android:id="@+id/catTitle"
-      android:text="Категория: "
-      style="@style/simple_text"
-      android:layout_below="@id/date" />
-
-    <TextView
-      android:id="@+id/catName"
-      android:text="Из жизни"
-      style="@style/simple_text"
-      android:layout_below="@id/date"
-      android:layout_toRightOf="@id/catTitle" />
-
-    <TextView
       android:id="@+id/menWonder"
       android:text="человек\nудивились"
-      android:textSize="10sp"
+      android:textSize="11sp"
       android:textStyle="bold"
       android:textColor="@android:color/black"
       android:paddingLeft="5dp"
-      android:layout_alignBaseline="@id/date"
+      android:layout_centerInParent="true"
       android:layout_alignParentRight="true"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
@@ -90,10 +77,25 @@
       android:textSize="30sp"
       android:textStyle="bold"
       android:textColor="@android:color/black"
-      android:layout_alignBaseline="@id/catName"
+      android:layout_centerVertical="true"
       android:layout_toLeftOf="@id/menWonder"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/catTitle"
+      android:text="Категория: "
+      style="@style/simple_text"
+      android:layout_alignBaseline="@id/wonders"
+      android:layout_below="@id/date" />
+
+    <TextView
+      android:id="@+id/catName"
+      android:text="Из жизни"
+      style="@style/simple_text"
+      android:layout_alignBaseline="@id/wonders"
+      android:layout_below="@id/date"
+      android:layout_toRightOf="@id/catTitle" />
 
   </RelativeLayout>
 

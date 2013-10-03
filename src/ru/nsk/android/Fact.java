@@ -3,6 +3,7 @@ package ru.nsk.android;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class Fact extends Activity {
@@ -30,6 +31,14 @@ public class Fact extends Activity {
     wonderers.setText(intent.getStringExtra("wonder"));
 
     fullFact.setText(factText);
+
+  }
+
+  public void reload(View view) {
+
+  }
+
+  public void back(View view) {
 
   }
 }
