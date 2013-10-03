@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fon_yellow">
+
+    <TextView
+      android:id="@+id/label"
+      style="@style/ActivityFont"
+      android:text="@string/board"
+      android:layout_alignParentLeft="true" />
+
+    <ImageButton
+      android:id="@+id/backBtn"
+      android:onClick="back"
+      android:background="@drawable/arrow5"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/reloadBtn"
+      android:layout_marginRight="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/desc" />
+
+    <ImageButton
+      android:id="@+id/reloadBtn"
+      android:onClick="reload"
+      android:background="@drawable/reload_arrow_new"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/desc" />
+  </RelativeLayout>
+
+  <ListView
+    android:id="@+id/board_list"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" />
+</LinearLayout>

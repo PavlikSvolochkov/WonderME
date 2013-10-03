@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@android:color/white"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fon_yellow">
+
+    <TextView
+      android:id="@+id/label"
+      android:text="Удивительный факт"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textColor="@android:color/black"
+      android:layout_marginLeft="8dp"
+      android:layout_centerVertical="true"
+      android:layout_alignParentLeft="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <ImageButton
+      android:id="@+id/backBtn"
+      android:onClick="back"
+      android:background="@drawable/arrow5"
+      android:layout_centerVertical="true"
+      android:layout_toLeftOf="@id/reloadBtn"
+      android:layout_marginRight="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/desc" />
+
+    <ImageButton
+      android:id="@+id/reloadBtn"
+      android:onClick="reload"
+      android:background="@drawable/reload_arrow_new"
+      android:layout_alignParentRight="true"
+      android:layout_centerVertical="true"
+      android:layout_marginRight="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/desc" />
+  </RelativeLayout>
+
+  <TextView
+    android:id="@+id/fullFact"
+    android:text="@string/trash"
+    android:textSize="16sp"
+    android:padding="8dp"
+    android:textColor="@android:color/black"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" />
+
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white"
+    android:padding="8dp"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+      android:id="@+id/date"
+      android:text="05.06.2012"
+      android:textColor="@color/about_text_color"
+      android:textSize="12sp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/catTitle"
+      android:text="Категория: "
+      android:textColor="@color/about_text_color"
+      android:textSize="12sp"
+      android:layout_below="@id/date"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/catName"
+      android:text="Из жизни"
+      android:textColor="@color/about_text_color"
+      android:textSize="12sp"
+      android:layout_below="@id/date"
+      android:layout_toRightOf="@id/catTitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/menWonder"
+      android:text="человек\nудивились"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      android:textColor="@android:color/black"
+      android:paddingLeft="5dp"
+      android:layout_alignParentRight="true"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/wonders"
+      android:text="7"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      android:textColor="@android:color/black"
+      android:layout_toLeftOf="@id/menWonder"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+  </RelativeLayout>
+
+  <RelativeLayout
+    android:id="@+id/about"
+    android:padding="8dp"
+    android:background="@color/light_gray"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+      android:id="@+id/photo"
+      android:src="@drawable/ic_launcher"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <LinearLayout
+      android:id="@+id/aboutInfo"
+      android:layout_toRightOf="@+id/photo"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content">
+
+      <RatingBar
+        android:id="@+id/rating"
+        style="@style/foodRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+      <TextView
+        android:id="@+id/name"
+        android:text="Лермонтов Алексей"
+        android:textColor="@android:color/background_dark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/title"
+        android:text="Титул: замечательный удивляльщик"
+        android:textColor="@color/about_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/addFacts"
+        android:text="Добавлено фактов: 1"
+        android:textColor="@color/about_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+      <TextView
+        android:id="@+id/sum"
+        android:text="Сумма рейтингов: 452"
+        android:textColor="@color/about_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+  </RelativeLayout>
+</LinearLayout>

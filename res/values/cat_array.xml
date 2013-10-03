@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="cat_names">
+    <item>Все</item>
+    <item>IT</item>
+    <item>История</item>
+    <item>Животные</item>
+    <item>Из жизни</item>
+    <item>Богатство</item>
+    <item>Достижения</item>
+    <item>Научные</item>
+    <item>Искусство и СМИ</item>
+    <item>Человек</item>
+  </string-array>
+</resources>

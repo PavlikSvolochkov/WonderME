@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:gravity="center_vertical|center_horizontal"
+  android:background="@drawable/home_fon_new"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+
+  <ImageButton
+    android:id="@+id/logo_home"
+    android:onClick="toWebsite"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/wonder_logo_new"
+    android:contentDescription="@string/desc" />
+
+  <ImageButton
+    android:id="@+id/all_facts"
+    android:onClick="toFacts"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_below="@id/logo_home"
+    android:layout_toLeftOf="@id/category"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/fact"
+    android:contentDescription="@string/desc" />
+
+  <TextView
+    android:id="@+id/space1"
+    android:text=""
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+  <ImageButton
+    android:id="@+id/category"
+    android:onClick="toCategoryes"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_below="@id/logo_home"
+    android:layout_toRightOf="@id/space1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/categories"
+    android:contentDescription="@string/desc" />
+
+  <TextView
+    android:id="@+id/space2"
+    android:text=""
+    android:layout_below="@id/all_facts"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+  <ImageButton
+    android:id="@+id/top50"
+    android:onClick="toTop"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/all_facts"
+    android:layout_toLeftOf="@id/space2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top50"
+    android:contentDescription="@string/desc" />
+
+  <ImageButton
+    android:id="@+id/desk"
+    android:onClick="toBoard"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="10dp"
+    android:layout_below="@id/category"
+    android:layout_toRightOf="@id/space2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/desk"
+    android:contentDescription="@string/desc" />
+
+  <ImageButton
+    android:id="@+id/favorites"
+    android:onClick="toFavorites"
+    android:layout_below="@id/desk"
+    android:layout_centerHorizontal="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/favorites"
+    android:contentDescription="@string/desc" />
+</RelativeLayout>
+
