@@ -27,7 +27,7 @@ public class CategoryAdapter extends ArrayAdapter<String> {
   public View getView(int position, View convertView, ViewGroup parent) {
     LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
-    View rowView = inflater.inflate(R.layout.category_row, parent, false);
+    View rowView = inflater.inflate(R.layout.category_list_item, parent, false);
 
     catTextView = (TextView) rowView.findViewById(R.id.category);
     counterTextView = (TextView) rowView.findViewById(R.id.counter);
