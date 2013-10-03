@@ -11,7 +11,7 @@
     android:paddingRight="8dp"
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/fon_yellow">
+    android:background="@drawable/header_fon_yellow">
 
     <TextView
       android:id="@+id/label"
@@ -23,7 +23,7 @@
     <ImageButton
       android:id="@+id/backBtn"
       android:onClick="back"
-      android:background="@drawable/arrow5"
+      android:background="@drawable/button_back"
       android:layout_centerVertical="true"
       android:layout_toLeftOf="@id/reloadBtn"
       android:layout_marginRight="8dp"
@@ -34,7 +34,7 @@
     <ImageButton
       android:id="@+id/reloadBtn"
       android:onClick="reload"
-      android:background="@drawable/reload_arrow_new"
+      android:background="@drawable/button_reload"
       android:layout_alignParentRight="true"
       android:layout_centerVertical="true"
       android:layout_width="wrap_content"
