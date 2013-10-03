@@ -11,8 +11,14 @@
     <item name="android:layout_height">wrap_content</item>
   </style>
 
-  <style name="header_back_button">
-
+  <style name="header_style">
+    <item name="android:orientation">horizontal</item>
+    <item name="android:padding">8dp</item>
+    <!--<item name="android:paddingLeft">8dp</item>-->
+    <!--<item name="android:paddingRight">8dp</item>-->
+    <item name="android:layout_width">fill_parent</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:background">@drawable/header_fon_yellow</item>
   </style>
 
   <style name="fact_text">

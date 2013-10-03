@@ -99,7 +99,7 @@
     очень подвижным соединениям костей черепа, малоразвитым зубам и особым отросткам шейных позвонков.
     Именно благодаря им змея вскрывает скорлупу, проглатывая жидкость и выплёвывая затем остатки скорлупы</string>
   <string name="desc">Description</string>
-  <string name="about_text">WonderMe. Приложение об удивительных фактах.\n\n&#169;2013 Все права защищены.\n\nВерсия 1.0</string>
-  <string name="to_website">wonderme.ru</string>
+  <string name="about_text">\nWonderMe. Приложение об удивительных фактах.\n\n&#169;2013 Все права защищены.\n\nВерсия 1.0</string>
+  <string name="to_website">wonderme.ru\n</string>
 
 </resources>

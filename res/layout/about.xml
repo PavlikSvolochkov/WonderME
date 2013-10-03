@@ -6,17 +6,12 @@
   android:layout_height="match_parent">
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/header_fon_yellow">
+    style="@style/header_style">
 
     <TextView
       android:id="@+id/label"
-      style="@style/activity_header"
-      android:text="@string/about" />
+      android:text="@string/about"
+      style="@style/activity_header" />
 
     <ImageButton
       android:id="@+id/backBtn"
@@ -61,6 +56,13 @@
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"/>
 
-  </LinearLayout>
+    <ImageButton
+      android:id="@+id/golosovat"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/button_golosovat"
+      android:contentDescription="@string/desc" />
 
+  </LinearLayout>
 </LinearLayout>

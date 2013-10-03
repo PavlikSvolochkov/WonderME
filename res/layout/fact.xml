@@ -7,18 +7,12 @@
   android:layout_height="fill_parent">
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/header"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    android:orientation="horizontal"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/header_fon_yellow">
+    style="@style/header_style">
 
     <TextView
       android:id="@+id/label"
       style="@style/activity_header"
-      android:text="Удивительный факт"/>
+      android:text="Удивительный факт" />
 
     <ImageButton
       android:id="@+id/backBtn"
@@ -46,7 +40,7 @@
     android:id="@+id/fullFact"
     android:text="@string/trash"
     android:padding="8dp"
-    style="@style/fact_text"/>
+    style="@style/fact_text" />
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@android:color/white"
@@ -57,7 +51,7 @@
     <TextView
       android:id="@+id/date"
       android:text="05.06.2012"
-      style="@style/simple_text"/>
+      style="@style/simple_text" />
 
     <TextView
       android:id="@+id/menWonder"
@@ -135,17 +129,17 @@
       <TextView
         android:id="@+id/title"
         android:text="Титул: замечательный удивляльщик"
-        style="@style/simple_text"/>
+        style="@style/simple_text" />
 
       <TextView
         android:id="@+id/addFacts"
         android:text="Добавлено фактов: 1"
-        style="@style/simple_text"/>
+        style="@style/simple_text" />
 
       <TextView
         android:id="@+id/sum"
         android:text="Сумма рейтингов: 452"
-        style="@style/simple_text"/>
+        style="@style/simple_text" />
 
     </LinearLayout>
   </RelativeLayout>

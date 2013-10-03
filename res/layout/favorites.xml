@@ -6,12 +6,7 @@
   android:layout_height="fill_parent">
 
   <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
-    android:paddingLeft="8dp"
-    android:paddingRight="8dp"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/header_fon_yellow">
+    style="@style/header_style">
 
     <TextView
       android:id="@+id/label"

@@ -59,7 +59,7 @@ public class AllFacts extends ListActivity  {
   }
 
   public void back(View view) {
-
+    startActivity(new Intent(this, About.class));
   }
 
 }
