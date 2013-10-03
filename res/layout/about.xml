@@ -16,28 +16,51 @@
     <TextView
       android:id="@+id/label"
       style="@style/activity_header"
-      android:text="@string/board" />
+      android:text="@string/about" />
 
     <ImageButton
       android:id="@+id/backBtn"
       android:onClick="back"
       android:background="@drawable/button_back"
       android:layout_centerVertical="true"
-      android:layout_toLeftOf="@id/reloadBtn"
-      android:layout_marginRight="8dp"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:contentDescription="@string/desc" />
-
-    <ImageButton
-      android:id="@+id/reloadBtn"
-      android:onClick="reload"
-      android:background="@drawable/button_reload"
       android:layout_alignParentRight="true"
-      android:layout_centerVertical="true"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:contentDescription="@string/desc" />
   </RelativeLayout>
+
+  <LinearLayout
+    android:orientation="vertical"
+    android:padding="66dp"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ImageButton
+      android:id="@+id/logo_home"
+      android:onClick="toWebsite"
+      android:layout_gravity="center_horizontal"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/wonder_logo"
+      android:contentDescription="@string/desc" />
+
+    <TextView
+      android:id="@+id/about"
+      android:textSize="15sp"
+      android:padding="8dp"
+      style="@style/simple_text"
+      android:text="@string/about_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:text="@string/to_website"
+      android:autoLink="web"
+      android:padding="8dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"/>
+
+  </LinearLayout>
 
 </LinearLayout>

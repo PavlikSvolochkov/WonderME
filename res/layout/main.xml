@@ -12,7 +12,7 @@
     android:layout_centerHorizontal="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/wonder_logo_new"
+    android:background="@drawable/wonder_logo"
     android:contentDescription="@string/desc" />
 
   <ImageButton
@@ -24,7 +24,7 @@
     android:layout_toLeftOf="@id/category"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/fact"
+    android:background="@drawable/button_fact"
     android:contentDescription="@string/desc" />
 
   <TextView
@@ -63,7 +63,7 @@
     android:layout_toLeftOf="@id/space2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/top50"
+    android:background="@drawable/button_top50"
     android:contentDescription="@string/desc" />
 
   <ImageButton
@@ -75,7 +75,7 @@
     android:layout_toRightOf="@id/space2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/desk"
+    android:background="@drawable/button_desk"
     android:contentDescription="@string/desc" />
 
   <ImageButton
@@ -85,7 +85,7 @@
     android:layout_centerHorizontal="true"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/favorites"
+    android:background="@drawable/button_favorites"
     android:contentDescription="@string/desc" />
 </RelativeLayout>
 

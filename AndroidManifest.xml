@@ -62,5 +62,11 @@
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.NoTitleBar" />
 
+    <activity
+      android:name=".About"
+      android:label="@string/about"
+      android:screenOrientation="portrait"
+      android:theme="@android:style/Theme.NoTitleBar" />
+
   </application>
 </manifest>
