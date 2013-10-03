@@ -13,7 +13,7 @@
 
   <application
     android:label="@string/app_name"
-    android:icon="@drawable/applogo_57x57">
+    android:icon="@drawable/application_icon_57x57">
 
     <activity
       android:name="WonderMe"
