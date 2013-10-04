@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 public class WonderMe extends Activity {
@@ -39,5 +41,17 @@ public class WonderMe extends Activity {
 
   public void toFavorites(View view) {
     startActivity(new Intent(this, Favorites.class));
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    menu.add("О приложении");
+    return super.onCreateOptionsMenu(menu);
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    startActivity(new Intent(this, About.class));
+    return super.onOptionsItemSelected(item);
   }
 }
