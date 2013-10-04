@@ -10,7 +10,7 @@
   <TextView
     android:id="@+id/category"
     android:text="Category"
-    style="@style/activity_header"/>
+    style="@style/activity_header" />
 
   <TextView
     android:id="@+id/counter"
@@ -18,7 +18,7 @@
     android:layout_toRightOf="@+id/category"
     android:layout_alignBaseline="@id/category"
     android:paddingLeft="15dp"
-    style="@style/simple_text"/>
+    style="@style/simple_text" />
 
   <TextView
     android:id="@+id/facts"

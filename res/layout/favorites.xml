@@ -13,7 +13,7 @@
       android:text="@string/favorites"
       style="@style/activity_header"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+      android:layout_height="wrap_content" />
 
     <ImageButton
       android:id="@+id/backBtn"

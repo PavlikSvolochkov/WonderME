@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class AllFacts extends ListActivity  {
+public class AllFacts extends ListActivity {
 
   String[] factText;
   String[] names;

@@ -11,7 +11,7 @@
     <TextView
       android:id="@+id/label"
       style="@style/activity_header"
-      android:text="@string/board"/>
+      android:text="@string/board" />
 
     <ImageButton
       android:id="@+id/backBtn"

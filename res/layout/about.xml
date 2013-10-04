@@ -53,7 +53,7 @@
       android:autoLink="web"
       android:padding="8dp"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content"/>
+      android:layout_height="wrap_content" />
 
     <ImageButton
       android:id="@+id/golosovat"
