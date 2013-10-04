@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class AllFacts extends ListActivity {
 
@@ -59,7 +60,7 @@ public class AllFacts extends ListActivity {
   }
 
   public void back(View view) {
-    startActivity(new Intent(this, About.class));
+    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
   }
 
 }

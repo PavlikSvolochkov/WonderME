@@ -37,8 +37,8 @@
   </style>
 
   <style name="arrow_style">
-    <item name="android:src">@android:drawable/arrow_down_float</item>
-    <item name="android:rotation">270</item>
+    <item name="android:src">@drawable/arrow_next</item>
+    <item name="android:rotation">360</item>
     <item name="android:layout_centerVertical">true</item>
     <item name="android:layout_alignParentRight">true</item>
     <item name="android:layout_width">wrap_content</item>

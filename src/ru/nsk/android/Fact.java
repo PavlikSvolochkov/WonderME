@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Fact extends Activity {
 
@@ -35,10 +36,10 @@ public class Fact extends Activity {
   }
 
   public void reload(View view) {
-
+    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
   }
 
   public void back(View view) {
-
+    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
   }
 }
