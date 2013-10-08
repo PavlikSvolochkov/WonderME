@@ -137,7 +137,7 @@
         style="@style/simple_text" />
 
       <TextView
-        android:id="@+id/sum"
+        android:id="@+id/ratingSum"
         android:text="Сумма рейтингов: 452"
         style="@style/simple_text" />
 

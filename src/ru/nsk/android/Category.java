@@ -4,7 +4,6 @@ import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
-import android.widget.Toast;
 
 public class Category extends ListActivity {
 
@@ -36,6 +35,6 @@ public class Category extends ListActivity {
   }
 
   public void back(View view) {
-    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
+    onBackPressed();
   }
 }

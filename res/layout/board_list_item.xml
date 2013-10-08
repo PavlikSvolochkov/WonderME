@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+  android:id="@+id/about"
+  android:padding="8dp"
+  android:background="@color/light_gray"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <ImageView
+    android:id="@+id/photo"
+    android:src="@drawable/ic_launcher"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+  <LinearLayout
+    android:id="@+id/aboutInfo"
+    android:layout_toRightOf="@+id/photo"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RatingBar
+      android:id="@+id/rating"
+      style="@style/RatingBar"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/name"
+      android:textSize="15sp"
+      android:text="Лермонтов Алексей"
+      android:textColor="@android:color/black"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content" />
+
+    <TextView
+      android:id="@+id/title"
+      android:textSize="13sp"
+      android:text="Титул: замечательный удивляльщик"
+      style="@style/simple_text" />
+
+    <TextView
+      android:id="@+id/addFacts"
+      android:textSize="13sp"
+      android:text="Добавлено фактов: 1"
+      style="@style/simple_text" />
+
+    <TextView
+      android:id="@+id/ratingSum"
+      android:textSize="13sp"
+      android:text="Сумма рейтингов: 452"
+      style="@style/simple_text" />
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/topNum"
+    android:text="1"
+    android:textSize="60sp"
+    android:textColor="#F2C569"
+    android:layout_alignParentRight="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+
+</RelativeLayout>

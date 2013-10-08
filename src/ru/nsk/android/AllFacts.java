@@ -3,11 +3,11 @@ package ru.nsk.android;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class AllFacts extends ListActivity {
 
@@ -55,12 +55,17 @@ public class AllFacts extends ListActivity {
     });
   }
 
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    return super.onCreateOptionsMenu(menu);
+  }
+
   public void reload(View view) {
     listView.setAdapter(adapter);
   }
 
   public void back(View view) {
-    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
+    onBackPressed();
   }
 
 }

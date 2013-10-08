@@ -21,6 +21,6 @@ public class Favorites extends Activity {
   }
 
   public void back(View view) {
-    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
+    onBackPressed();
   }
 }

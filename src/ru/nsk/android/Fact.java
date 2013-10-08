@@ -28,6 +28,9 @@ public class Fact extends Activity {
     fullFact = (TextView) findViewById(R.id.fullFact);
     factText = intent.getStringExtra("fact");
 
+    name = (TextView) findViewById(R.id.name);
+    name.setText(intent.getStringExtra("name"));
+
     wonderers = (TextView) findViewById(R.id.wonders);
     wonderers.setText(intent.getStringExtra("wonder"));
 
@@ -40,6 +43,6 @@ public class Fact extends Activity {
   }
 
   public void back(View view) {
-    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
+    onBackPressed();
   }
 }
