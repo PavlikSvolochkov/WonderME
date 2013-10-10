@@ -3,6 +3,8 @@ package ru.nsk.android;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,7 +15,7 @@ public class Fact extends Activity {
 
   TextView fullFact;
   TextView name;
-  TextView wonderers;
+  TextView wonders;
 
   /**
    * Called when the activity is first created.
@@ -31,11 +33,35 @@ public class Fact extends Activity {
     name = (TextView) findViewById(R.id.name);
     name.setText(intent.getStringExtra("name"));
 
-    wonderers = (TextView) findViewById(R.id.wonders);
-    wonderers.setText(intent.getStringExtra("wonder"));
+    wonders = (TextView) findViewById(R.id.wonders);
+    wonders.setText(intent.getStringExtra("wonder"));
 
     fullFact.setText(factText);
 
+  }
+
+  @Override
+  public boolean onCreateOptionsMenu(Menu menu) {
+    menu.add(0, 1, 1, "Поделиться");
+    menu.add(0, 2, 2, "Ещё");
+    menu.add(0, 3, 3, "В избранное");
+    return super.onCreateOptionsMenu(menu);
+  }
+
+  @Override
+  public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+      case 1:
+        Toast.makeText(this, "Отправляет на страничку вконтакте.", Toast.LENGTH_SHORT).show();
+        break;
+      case 2:
+        Toast.makeText(this, "Показать следующий факт", Toast.LENGTH_SHORT).show();
+        break;
+      case 3:
+        Toast.makeText(this, "Добавить в избранное", Toast.LENGTH_SHORT).show();
+        break;
+    }
+    return super.onOptionsItemSelected(item);
   }
 
   public void reload(View view) {
