@@ -36,7 +36,7 @@
 
   <ImageButton
     android:id="@+id/category"
-    android:onClick="toCategoryes"
+    android:onClick="toCategories"
     android:layout_marginLeft="8dp"
     android:layout_marginTop="8dp"
     android:layout_below="@id/logo_home"
