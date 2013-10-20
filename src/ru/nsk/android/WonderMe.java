@@ -27,7 +27,7 @@ public class WonderMe extends Activity {
     startActivity(new Intent(this, AllFacts.class));
   }
 
-  public void toCategoryes(View view) {
+  public void toCategories(View view) {
     startActivity(new Intent(this, Category.class));
   }
 
