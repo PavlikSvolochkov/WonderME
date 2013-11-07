@@ -15,14 +15,6 @@ public class BoardAdapter extends ArrayAdapter<String> {
   private final String[] count;
   private final String[] ratingSum;
 
-  int pos = 1;
-
-  TextView tvName;
-  TextView tvTitle;
-  TextView tvCount;
-  TextView tvRating;
-  TextView topNum;
-
   public BoardAdapter(Context context, String[] name, String[] title, String[] count, String[] ratingSum) {
     super(context, R.layout.board_list_item, name);
     this.context = context;
@@ -38,17 +30,11 @@ public class BoardAdapter extends ArrayAdapter<String> {
 
     View rowView = inflater.inflate(R.layout.board_list_item, parent, false);
 
-    tvName = (TextView) rowView.findViewById(R.id.name);
-    tvTitle = (TextView) rowView.findViewById(R.id.title);
-    tvCount = (TextView) rowView.findViewById(R.id.addFacts);
-    tvRating = (TextView) rowView.findViewById(R.id.ratingSum);
-    topNum = (TextView) rowView.findViewById(R.id.topNum);
-
-    tvName.setText(name[position]);
-    tvTitle.setText("Титул: " + title[position]);
-    tvCount.setText("Добавлено фактов: " + count[position]);
-    tvRating.setText("Сумма рейтингов: " + ratingSum[position]);
-    topNum.setText(String.valueOf(position + 1));
+    ((TextView) rowView.findViewById(R.id.name)).setText(name[position]);
+    ((TextView) rowView.findViewById(R.id.title)).setText("Титул: " + title[position]);
+    ((TextView) rowView.findViewById(R.id.addFacts)).setText("Добавлено фактов: " + count[position]);
+    ((TextView) rowView.findViewById(R.id.ratingSum)).setText("Сумма рейтингов: " + ratingSum[position]);
+    ((TextView) rowView.findViewById(R.id.topNum)).setText(String.valueOf(position + 1));
 
     return rowView;
   }

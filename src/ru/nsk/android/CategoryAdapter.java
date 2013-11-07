@@ -13,9 +13,6 @@ public class CategoryAdapter extends ArrayAdapter<String> {
   private final String[] catValues;
   private final String[] countValues;
 
-  TextView catTextView;
-  TextView counterTextView;
-
   public CategoryAdapter(Context context, String[] catValues, String[] countValues) {
     super(context, R.layout.category_list_item, catValues);
     this.context = context;
@@ -29,11 +26,8 @@ public class CategoryAdapter extends ArrayAdapter<String> {
 
     View rowView = inflater.inflate(R.layout.category_list_item, parent, false);
 
-    catTextView = (TextView) rowView.findViewById(R.id.category);
-    counterTextView = (TextView) rowView.findViewById(R.id.counter);
-
-    catTextView.setText(catValues[position]);
-    counterTextView.setText(countValues[position]);
+    ((TextView) rowView.findViewById(R.id.category)).setText(catValues[position]);
+    ((TextView) rowView.findViewById(R.id.counter)).setText(countValues[position]);
 
     return rowView;
   }

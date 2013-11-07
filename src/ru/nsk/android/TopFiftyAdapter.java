@@ -14,10 +14,6 @@ public class TopFiftyAdapter extends ArrayAdapter<String> {
   private final String[] nameText;
   private final String[] counter;
 
-  TextView factField;
-  TextView nameField;
-  TextView countField;
-
   public TopFiftyAdapter(Context context,
                          String[] factText,
                          String[] nameText,
@@ -35,13 +31,9 @@ public class TopFiftyAdapter extends ArrayAdapter<String> {
 
     View rowView = inflater.inflate(R.layout.all_facts_list_item, parent, false);
 
-    factField = (TextView) rowView.findViewById(R.id.factText);
-    nameField = (TextView) rowView.findViewById(R.id.factName);
-    countField = (TextView) rowView.findViewById(R.id.factCount);
-
-    factField.setText(factText[position]);
-    nameField.setText(nameText[position]);
-    countField.setText(counter[position]);
+    ((TextView) rowView.findViewById(R.id.factText)).setText(factText[position]);
+    ((TextView) rowView.findViewById(R.id.factName)).setText(nameText[position]);
+    ((TextView) rowView.findViewById(R.id.factCount)).setText(counter[position]);
 
     return rowView;
   }

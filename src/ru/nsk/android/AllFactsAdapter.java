@@ -14,10 +14,6 @@ public class AllFactsAdapter extends ArrayAdapter<String> {
   private final String[] name;
   private final String[] counter;
 
-  TextView factText;
-  TextView nameText;
-  TextView count;
-
   public AllFactsAdapter(Context context,
                          String[] factText,
                          String[] nameText,
@@ -35,13 +31,9 @@ public class AllFactsAdapter extends ArrayAdapter<String> {
 
     View rowView = inflater.inflate(R.layout.all_facts_list_item, parent, false);
 
-    factText = (TextView) rowView.findViewById(R.id.factText);
-    nameText = (TextView) rowView.findViewById(R.id.factName);
-    count = (TextView) rowView.findViewById(R.id.factCount);
-
-    factText.setText(fact[position]);
-    nameText.setText(name[position]);
-    count.setText(counter[position]);
+    ((TextView) rowView.findViewById(R.id.factText)).setText(fact[position]);
+    ((TextView) rowView.findViewById(R.id.factName)).setText(name[position]);
+    ((TextView) rowView.findViewById(R.id.factCount)).setText(counter[position]);
 
     return rowView;
   }
