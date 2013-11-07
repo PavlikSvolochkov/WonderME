@@ -155,5 +155,6 @@
   <string name="desc">Description</string>
   <string name="about_text">\nWonderMe. Приложение об удивительных фактах.\n\n&#169;2013 Все права защищены.\n\nВерсия 1.0</string>
   <string name="to_website">wonderme.ru</string>
+  <string name="people_wonder">человек\nудивились</string>
 
 </resources>

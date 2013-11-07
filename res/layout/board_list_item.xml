@@ -12,7 +12,8 @@
     android:id="@+id/photo"
     android:src="@drawable/ic_launcher"
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content" />
+    android:layout_height="wrap_content"
+    android:contentDescription="@string/desc" />
 
   <LinearLayout
     android:id="@+id/aboutInfo"

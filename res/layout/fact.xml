@@ -55,8 +55,8 @@
 
     <TextView
       android:id="@+id/menWonder"
-      android:text="человек\nудивились"
-      android:textSize="11sp"
+      android:text="@string/people_wonder"
+      android:textSize="12sp"
       android:textStyle="bold"
       android:textColor="@android:color/black"
       android:paddingLeft="5dp"
@@ -104,7 +104,8 @@
       android:id="@+id/photo"
       android:src="@drawable/ic_launcher"
       android:layout_width="wrap_content"
-      android:layout_height="wrap_content" />
+      android:layout_height="wrap_content"
+      android:contentDescription="@string/desc" />
 
     <LinearLayout
       android:id="@+id/aboutInfo"

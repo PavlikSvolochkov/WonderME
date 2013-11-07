@@ -11,11 +11,11 @@ import android.widget.Toast;
 
 public class Fact extends Activity {
 
-  String factText;
+  private String factText;
 
-  TextView fullFact;
-  TextView name;
-  TextView wonders;
+  private TextView fullFact;
+  private TextView name;
+  private TextView wonders;
 
   /**
    * Called when the activity is first created.

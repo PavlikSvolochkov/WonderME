@@ -26,7 +26,7 @@ public class AllFactsAdapter extends ArrayAdapter<String> {
   }
 
   @Override
-  public View getView(int position, View convertView, ViewGroup parent) {
+  public View getView(int position, View convertView, ViewGroup parent) throws NullPointerException {
     LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
     View rowView = inflater.inflate(R.layout.all_facts_list_item, parent, false);

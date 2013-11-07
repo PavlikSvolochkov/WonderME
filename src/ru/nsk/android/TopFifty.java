@@ -10,12 +10,12 @@ import android.widget.ListView;
 
 public class TopFifty extends Activity {
 
-  String[] factArray;
-  String[] nameArray;
-  String[] countArray;
+  private String[] factArray;
+  private String[] nameArray;
+  private String[] countArray;
 
-  ListView listView;
-  TopFiftyAdapter adapter;
+  private ListView listView;
+  private TopFiftyAdapter adapter;
 
   /**
    * Called when the activity is first created.

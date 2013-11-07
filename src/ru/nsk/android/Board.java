@@ -11,13 +11,13 @@ import android.widget.Toast;
 
 public class Board extends ListActivity {
 
-  String[] names;
-  String[] titles;
-  String[] counter;
-  String[] ratings;
+  private String[] names;
+  private String[] titles;
+  private String[] counter;
+  private String[] ratings;
 
-  ListView lvBoard = null;
-  BoardAdapter adapter;
+  private ListView lvBoard = null;
+  private BoardAdapter adapter;
 
   /**
    * Called when the activity is first created.

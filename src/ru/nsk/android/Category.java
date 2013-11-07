@@ -10,11 +10,11 @@ import android.widget.ListView;
 
 public class Category extends ListActivity {
 
-  String[] categories;
-  String[] values;
+  private String[] categories;
+  private String[] values;
 
-  ListView listView;
-  CategoryAdapter adapter;
+  private ListView listView;
+  private CategoryAdapter adapter;
 
   /**
    * Called when the activity is first created.

@@ -12,16 +12,16 @@ import android.widget.TextView;
 
 public class AllFacts extends ListActivity {
 
-  String[] factText;
-  String[] names;
-  String[] counts;
+  private String[] factText;
+  private String[] names;
+  private String[] counts;
 
   TextView tvFactText;
-  ListView listView = null;
+  private ListView listView = null;
 
-  Intent intent;
+  private Intent intent;
 
-  AllFactsAdapter adapter;
+  private AllFactsAdapter adapter;
 
   /**
    * Called when the activity is first created.
