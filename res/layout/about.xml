@@ -52,7 +52,8 @@
       android:text="@string/to_website"
       android:autoLink="web"
       android:textSize="15sp"
-      android:padding="8dp"
+      android:paddingLeft="8dp"
+      android:paddingBottom="24dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content" />
 
@@ -61,7 +62,7 @@
       android:layout_gravity="center_horizontal"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:background="@drawable/button_golosovat"
+      android:background="@drawable/button_vote"
       android:contentDescription="@string/desc" />
 
   </LinearLayout>
