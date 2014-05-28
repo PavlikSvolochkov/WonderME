@@ -156,5 +156,18 @@
   <string name="about_text">\nWonderMe. Приложение об удивительных фактах.\n\n&#169;2013 Все права защищены.\n\nВерсия 1.0</string>
   <string name="to_website">wonderme.ru</string>
   <string name="people_wonder">человек\nудивились</string>
+  <string name="wonder_fact">Удивительный факт</string>
+  <string name="temp_date">05.06.2012</string>
+  <string name="temp_name">Лермонтов Алексей</string>
+  <string name="temp_cat">Категория: </string>
+  <string name="temp_number">7</string>
+  <string name="temp_fromlife">Из жизни</string>
+  <string name="temp_titul">Титул: замечательный удивляльщик</string>
+  <string name="temp_addfacts">Добавлено фактов: 1</string>
+  <string name="temp_sumreiting">Сумма рейтингов: 452</string>
+  <string name="temp_name1">Name</string>
+  <string name="temp_count">count</string>
+  <string name="temp_name2">Лермонтов Алексей</string>
+  <string name="temp_titul1">Титул: замечательный удивляльщик</string>
 
 </resources>

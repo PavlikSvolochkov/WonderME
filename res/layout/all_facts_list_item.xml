@@ -21,7 +21,7 @@
   <TextView
     android:id="@+id/factName"
     android:paddingRight="10dp"
-    android:text="Name"
+    android:text="@string/temp_name1"
     style="@style/simple_text"
     android:layout_below="@id/factText" />
 
@@ -36,7 +36,7 @@
 
   <TextView
     android:id="@+id/factCount"
-    android:text="count"
+    android:text="@string/temp_count"
     style="@style/simple_text"
     android:layout_below="@id/factText"
     android:layout_toRightOf="@id/factStar" />
