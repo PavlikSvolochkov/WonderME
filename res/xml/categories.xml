@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WondermeCategories xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" TotalRecords="29">
+  <Category Id="1" Name="IT" FactsCount="72" />
+  <Category Id="2" Name="История" FactsCount="360" />
+  <Category Id="3" Name="Животные" FactsCount="453" />
+  <Category Id="4" Name="Из жизни" FactsCount="738" />
+  <Category Id="5" Name="Богатство" FactsCount="43" />
+  <Category Id="6" Name="Достижения" FactsCount="93" />
+  <Category Id="7" Name="Научные" FactsCount="202" />
+  <Category Id="8" Name="Искусство и СМИ" FactsCount="74" />
+  <Category Id="9" Name="Человек" FactsCount="509" />
+  <Category Id="10" Name="Катастрофы" FactsCount="20" />
+  <Category Id="11" Name="Современные технологии" FactsCount="58" />
+  <Category Id="12" Name="Спорт" FactsCount="55" />
+  <Category Id="13" Name="Страшные" FactsCount="84" />
+  <Category Id="14" Name="Короткие" FactsCount="585" />
+  <Category Id="15" Name="Длинные" FactsCount="402" />
+  <Category Id="16" Name="Знаменитости" FactsCount="150" />
+  <Category Id="17" Name="Бизнес" FactsCount="132" />
+  <Category Id="18" Name="Мир вокруг" FactsCount="163" />
+  <Category Id="19" Name="Религия" FactsCount="29" />
+  <Category Id="20" Name="США" FactsCount="175" />
+  <Category Id="21" Name="Россия" FactsCount="60" />
+  <Category Id="22" Name="Война" FactsCount="67" />
+  <Category Id="23" Name="Техника" FactsCount="48" />
+  <Category Id="24" Name="СССР" FactsCount="26" />
+  <Category Id="25" Name="Секс и отношения" FactsCount="176" />
+  <Category Id="26" Name="Смешные" FactsCount="118" />
+  <Category Id="27" Name="Абсурдные" FactsCount="141" />
+  <Category Id="29" Name="Растения" FactsCount="50" />
+  <Category Id="30" Name="Транспорт" FactsCount="29" />
+</WondermeCategories>

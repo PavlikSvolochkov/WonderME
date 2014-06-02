@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class Fact extends Activity {
+public class FactActivity extends Activity {
 
   private String factText;
 

@@ -9,6 +9,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 
+import soap.SoapActivity;
+
 public class WonderMe extends Activity {
 
   @Override
@@ -27,23 +29,23 @@ public class WonderMe extends Activity {
   }
 
   public void toFacts(View view) {
-    startActivity(new Intent(this, AllFacts.class));
+    startActivity(new Intent(this, AllFactsActivity.class));
   }
 
   public void toCategories(View view) {
-    startActivity(new Intent(this, Category.class));
+    startActivity(new Intent(this, CategoryActivity.class));
   }
 
   public void toTop(View view) {
-    startActivity(new Intent(this, TopFifty.class));
+    startActivity(new Intent(this, TopFiftyActivity.class));
   }
 
   public void toBoard(View view) {
-    startActivity(new Intent(this, Board.class));
+    startActivity(new Intent(this, BoardActivity.class));
   }
 
   public void toFavorites(View view) {
-    startActivity(new Intent(this, Favorites.class));
+    startActivity(new Intent(this, FavoritesActivity.class));
   }
 
   @Override
@@ -54,7 +56,8 @@ public class WonderMe extends Activity {
 
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
-    startActivity(new Intent(this, About.class));
+    startActivity(new Intent(this, SoapActivity.class));
+//    startActivity(new Intent(this, AboutActivity.class));
     return super.onOptionsItemSelected(item);
   }
 }

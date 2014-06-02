@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
-public class TopFifty extends Activity {
+public class TopFiftyActivity extends Activity {
 
   private String[] factArray;
   private String[] nameArray;
@@ -51,13 +51,13 @@ public class TopFifty extends Activity {
         startActivity(new Intent(this, WonderMe.class));
         break;
       case 2:
-        startActivity(new Intent(this, AllFacts.class));
+        startActivity(new Intent(this, AllFactsActivity.class));
         break;
       case 3:
-        startActivity(new Intent(this, Category.class));
+        startActivity(new Intent(this, CategoryActivity.class));
         break;
       case 4:
-        startActivity(new Intent(this, Favorites.class));
+        startActivity(new Intent(this, FavoritesActivity.class));
         break;
     }
     return super.onOptionsItemSelected(item);

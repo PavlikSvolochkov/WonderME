@@ -10,7 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class AllFacts extends ListActivity {
+public class AllFactsActivity extends ListActivity {
 
   private String[] factText;
   private String[] names;
@@ -31,7 +31,7 @@ public class AllFacts extends ListActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.all_facts);
 
-    intent = new Intent(this, Fact.class);
+    intent = new Intent(this, FactActivity.class);
 
     tvFactText = (TextView) findViewById(R.id.factText);
 
@@ -72,13 +72,13 @@ public class AllFacts extends ListActivity {
         startActivity(new Intent(this, WonderMe.class));
         break;
       case 2:
-        startActivity(new Intent(this, Category.class));
+        startActivity(new Intent(this, CategoryActivity.class));
         break;
       case 3:
-        startActivity(new Intent(this, TopFifty.class));
+        startActivity(new Intent(this, TopFiftyActivity.class));
         break;
       case 4:
-        startActivity(new Intent(this, Favorites.class));
+        startActivity(new Intent(this, FavoritesActivity.class));
         break;
     }
     return super.onOptionsItemSelected(item);

@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Board extends ListActivity {
+public class BoardActivity extends ListActivity {
 
   private String[] names;
   private String[] titles;
@@ -55,13 +55,13 @@ public class Board extends ListActivity {
         startActivity(new Intent(this, WonderMe.class));
         break;
       case 2:
-        startActivity(new Intent(this, Category.class));
+        startActivity(new Intent(this, CategoryActivity.class));
         break;
       case 3:
-        startActivity(new Intent(this, TopFifty.class));
+        startActivity(new Intent(this, TopFiftyActivity.class));
         break;
       case 4:
-        startActivity(new Intent(this, Favorites.class));
+        startActivity(new Intent(this, FavoritesActivity.class));
         break;
     }
     return super.onOptionsItemSelected(item);

@@ -1,20 +1,14 @@
 package ru.nsk.android;
 
-import android.app.ListActivity;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.ListView;
+import android.widget.Toast;
 
-public class Category extends ListActivity {
-
-  private String[] categories;
-  private String[] values;
-
-  private ListView listView;
-  private CategoryAdapter adapter;
+public class FavoritesActivity extends Activity {
 
   /**
    * Called when the activity is first created.
@@ -22,23 +16,15 @@ public class Category extends ListActivity {
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.categories);
-
-    listView = getListView();
-
-    categories = getResources().getStringArray(R.array.categories);
-    values = getResources().getStringArray(R.array.counts);
-
-    adapter = new CategoryAdapter(this, categories, values);
-    listView.setAdapter(adapter);
+    setContentView(R.layout.favorites);
   }
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     menu.add(0, 1, 1, "Главная");
     menu.add(0, 2, 2, "Все факты");
-    menu.add(0, 3, 3, "Топ 50");
-    menu.add(0, 4, 4, "Избранное");
+    menu.add(0, 3, 3, "Категории");
+    menu.add(0, 4, 4, "Топ 50");
     return super.onCreateOptionsMenu(menu);
   }
 
@@ -49,20 +35,20 @@ public class Category extends ListActivity {
         startActivity(new Intent(this, WonderMe.class));
         break;
       case 2:
-        startActivity(new Intent(this, AllFacts.class));
+        startActivity(new Intent(this, AllFactsActivity.class));
         break;
       case 3:
-        startActivity(new Intent(this, TopFifty.class));
+        startActivity(new Intent(this, CategoryActivity.class));
         break;
       case 4:
-        startActivity(new Intent(this, Favorites.class));
+        startActivity(new Intent(this, TopFiftyActivity.class));
         break;
     }
     return super.onOptionsItemSelected(item);
   }
 
   public void reload(View view) {
-    listView.setAdapter(adapter);
+    Toast.makeText(this, "Эта кнопка ничего не далет! =)", Toast.LENGTH_LONG).show();
   }
 
   public void back(View view) {
