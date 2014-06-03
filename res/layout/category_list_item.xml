@@ -17,7 +17,7 @@
     android:text="Count"
     android:layout_toRightOf="@+id/category"
     android:layout_alignBaseline="@id/category"
-    android:paddingLeft="15dp"
+    android:paddingLeft="10dp"
     style="@style/simple_text" />
 
   <TextView

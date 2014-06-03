@@ -2,12 +2,9 @@ package soap;
 
 public class Category {
 
-  private String id;
-  private String name;
-  private int factsCount;
-
-  public Category() {
-  }
+  private String id = "";
+  private String name = "";
+  private String factsCount = "";
 
   public String getId() {
     return id;
@@ -25,17 +22,17 @@ public class Category {
     this.name = name;
   }
 
-  public int getFactsCount() {
+  public String getFactsCount() {
     return factsCount;
   }
 
   public void setFactsCount(String factsCount) {
-    this.factsCount = Integer.valueOf(factsCount);
+    this.factsCount = factsCount;
   }
 
   @Override
   public String toString() {
-    return "CategoryActivity{" +
+    return "Category{" +
             "id='" + id + '\'' +
             ", name='" + name + '\'' +
             ", factsCount=" + factsCount +

@@ -8,6 +8,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ListView;
 
+import soap.CategoryParser;
+
 public class CategoryActivity extends ListActivity {
 
   private ListView listView;
@@ -21,15 +23,11 @@ public class CategoryActivity extends ListActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.categories);
 
-    String[] categories;
-    String[] values;
+    CategoryParser parser = new CategoryParser();
+    parser.parse(getResources().getXml(R.xml.categories));
 
     listView = getListView();
-
-    categories = getResources().getStringArray(R.array.categories);
-    values = getResources().getStringArray(R.array.counts);
-
-    adapter = new CategoryAdapter(this, categories, values);
+    adapter = new CategoryAdapter(this, parser.getCategories(), parser.getValues());
     listView.setAdapter(adapter);
   }
 
