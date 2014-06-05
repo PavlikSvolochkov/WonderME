@@ -27,7 +27,7 @@ public class CategoryActivity extends ListActivity {
     parser.parse(getResources().getXml(R.xml.categories));
 
     listView = getListView();
-    adapter = new CategoryAdapter(this, parser.getCategories(), parser.getValues());
+    adapter = new CategoryAdapter(this, parser.getCategories(), parser.getFactsCount());
     listView.setAdapter(adapter);
   }
 

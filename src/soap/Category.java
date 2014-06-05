@@ -6,8 +6,8 @@ public class Category {
   private String name = "";
   private String factsCount = "";
 
-  public String getId() {
-    return id;
+  public int getId() {
+    return Integer.valueOf(id);
   }
 
   public void setId(String id) {

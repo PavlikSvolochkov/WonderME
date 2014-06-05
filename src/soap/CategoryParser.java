@@ -12,13 +12,16 @@ import java.util.List;
 
 public class CategoryParser {
 
-  int catCount = 0;
+  private String TAG = "mytag";
 
-  String[] categories = null;
-  String[] values = null;
+  private int catCount = 0;
+  private int[] catIds = null;
 
-  Category category = null;
-  List<Category> categoryList = null;
+  private String[] categories = null;
+  private String[] factsCount = null;
+
+  private Category category = null;
+  private List<Category> categoryList = null;
 
   public void parse(XmlResourceParser categoryResourse) {
 
@@ -30,20 +33,20 @@ public class CategoryParser {
         switch (xpp.getEventType()) {
           // начало документа
           case XmlPullParser.START_DOCUMENT:
-            Log.d("mytag", "START_DOCUMENT");
+            Log.d(TAG, "START_DOCUMENT");
             break;
           // начало тэга
           case XmlPullParser.START_TAG:
             if (xpp.getName().equalsIgnoreCase("WondermeCategories")) {
-              Log.d("mytag", "START_TAG: name = " + xpp.getName() + ", TotalRecords = " + xpp.getAttributeValue(0));
+              Log.d(TAG, "START_TAG: name = " + xpp.getName() + ", TotalRecords = " + xpp.getAttributeValue(0));
               catCount = Integer.valueOf(xpp.getAttributeValue(null, "TotalRecords"));
             }
 
             categories = new String[catCount];
-            values = new String[catCount];
+            factsCount = new String[catCount];
 
             if (xpp.getName().equalsIgnoreCase("Category")) {
-              Log.d("mytag", "START_TAG: name = " + xpp.getName()
+              Log.d(TAG, "START_TAG: name = " + xpp.getName()
                       + ", Id = " + xpp.getAttributeValue(0)
                       + ", Name = " + xpp.getAttributeValue(1)
                       + ", FactsCount = " + xpp.getAttributeValue(2));
@@ -56,11 +59,11 @@ public class CategoryParser {
             break;
           // конец тэга
           case XmlPullParser.END_TAG:
-            Log.d("mytag", "END_TAG: name = " + xpp.getName());
+            //Log.d(TAG, "END_TAG: name = " + xpp.getName());
             break;
           // содержимое тэга
           case XmlPullParser.TEXT:
-            Log.d("mytag", "text = " + xpp.getText());
+            Log.d(TAG, "text = " + xpp.getText());
             break;
           default:
             break;
@@ -68,17 +71,19 @@ public class CategoryParser {
         // следующий элемент
         xpp.next();
       }
-      Log.d("mytag", "END_DOCUMENT");
+      Log.d(TAG, "END_DOCUMENT");
     } catch (XmlPullParserException e) {
       e.printStackTrace();
     } catch (IOException e) {
       e.printStackTrace();
     }
+  }
 
+  public int[] getCatIds() {
     for (int i = 0; i < categoryList.size(); i++) {
-      categories[i] = categoryList.get(i).getName();
-      values[i] = categoryList.get(i).getFactsCount();
+      catIds[i] = categoryList.get(i).getId();
     }
+    return catIds;
   }
 
   public String[] getCategories() {
@@ -88,10 +93,18 @@ public class CategoryParser {
     return categories;
   }
 
-  public String[] getValues() {
+  public String[] getFactsCount() {
     for (int i = 0; i < categoryList.size(); i++) {
-      values[i] = categoryList.get(i).getFactsCount();
+      factsCount[i] = categoryList.get(i).getFactsCount();
     }
-    return values;
+    return factsCount;
+  }
+
+  public List<Category> getCategoryList() {
+    return categoryList;
+  }
+
+  public int getCatCount() {
+    return catCount;
   }
 }

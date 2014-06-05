@@ -9,7 +9,9 @@ import org.ksoap2.serialization.SoapPrimitive;
 import org.ksoap2.serialization.SoapSerializationEnvelope;
 import org.ksoap2.transport.HttpTransportSE;
 
-public class Top50 implements Runnable {
+public class Top50Request implements Runnable {
+
+  private String TAG = "mytag";
 
   private final String NAMESPACE = "http://tempuri.org/";
   private final String URL = "http://wonderme.ru/wonderme.asmx";
@@ -50,11 +52,10 @@ public class Top50 implements Runnable {
     deviceInfo.setType(String.class);
     request.addProperty(deviceInfo); //Add the property to request object
 
-    Log.d("mytag", request.toString());
+    Log.d(TAG, request.toString());
 
     //Create envelope
     SoapSerializationEnvelope envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-    envelope.dotNet = true;
 
     //Set output SOAP object
     envelope.setOutputSoapObject(request);
@@ -67,7 +68,7 @@ public class Top50 implements Runnable {
       //Get the response
       SoapPrimitive response = (SoapPrimitive) envelope.getResponse();
       //Assign it to fahren static variable
-      Log.d("mytag", response.toString());
+      Log.d(TAG, response.toString());
     } catch (Exception e) {
       e.printStackTrace();
     }
